@@ -1,0 +1,30 @@
+# ─── Khaali — Project Root
+# ─── Node ────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+
+# ─── Environment files ───────────────────────────────
+.env
+.env.example
+.env.local
+.env.*.local
+!.env.example
+
+*.md
+# ─── API ─────────────────────────────────────────────
+api/dist/
+api/khaali.db
+api/khaali.db-shm
+api/khaali.db-wal
+
+# ─── Mobile / Expo ────────────────────────────────────
+mobile/.expo/
+mobile/dist/
+mobile/web-build/
+mobile/android/
+mobile/ios/
+mobile/google-services-key.json
+
+# ─── OS ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db

@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "Khaali — For Men, By Men",
+    "slug": "khaali",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "scheme": "khaali",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0A0F"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.goalfinstech.khaali",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Khaali uses your microphone for voice check-ins. Recordings stay on your device only."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0A0F"
+      },
+      "package": "com.goalfinstech.khaali",
+      "permissions": ["RECORD_AUDIO"]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-secure-store",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35,
+            "buildToolsVersion": "35.0.0"
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "apiUrl": "http://10.0.2.2:3000",
+      "apiUrlDevice": "http://192.168.1.100:3000",
+      "eas": {
+        "projectId": "0a24376a-0752-493b-8c69-0758f54054e3"
+      }
+    },
+    "owner": "goalfinstech"
+  }
+}
